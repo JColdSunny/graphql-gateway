@@ -1,0 +1,6 @@
+{
+  "workout-keeper-service": {
+    "host": "localhost",
+    "port": 8080
+  }
+}
