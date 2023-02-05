@@ -1,11 +1,11 @@
 import { Field, ObjectType } from "@nestjs/graphql";
-import { Workout } from "../models/workout";
+import { WorkoutModel } from "../models/workout.model";
 
-@ObjectType("GetWorkouts")
+@ObjectType()
 export class GetWorkoutsResponse {
 
-  @Field(() => [Workout])
-  workouts: Workout[];
+  @Field(() => [WorkoutModel])
+  workouts: WorkoutModel[];
 
   constructor(props: GetWorkoutsResponse) {
     this.workouts = props.workouts;
